@@ -31,16 +31,21 @@ body {
 	color: var(--ink);
 	font: var(--font);
 	padding-bottom: 10px;
+	background-color: #EDC7B7;
 }
 a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  background-color: #123C69;
+  text-decoration: none;
+  color: #BAB2B5;
 }
 img,
 svg {
 	width: 100%;
 	object-fit: cover;
+	background-color: #e9e8e9;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -61,8 +66,9 @@ footer {
 	bottom: 0;
 	left: 0;
 	text-align: center;
-	background: white;
+	background: #123C69;
 	padding: 10px 0;
+	color: #BAB2B5;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -86,6 +92,7 @@ Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
 	border: var(--line);
+	border-color: #123C69;
 	padding-bottom: var(--space);
 	text-align: left;
 	display: grid;
@@ -96,11 +103,16 @@ article {
 	> img {
 		grid-column: span 3;
   	}
+	background-color: #EEE2DC;
 }
 
 /* Footer layout */
 #back_top {
 	border: none;
+	background-color: #123C69;
+	padding: 0;
+	text-decoration: underline;
+	color: #BAB2B5;
 }
 #ftr {
 	margin: 0 auto;
