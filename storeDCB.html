@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinias Store</title>
+    </head> 
+<body>
+    <form> 
+        <h1> T-shirt Order Form</h1>
+        <p> Please complete all required (*) fields.</p>
+        <!-- Customer Identification -->
+         <p> 
+            <label for="Customer-name">Name>*:</label>
+            <input 
+            type="text" id="customer-name" 
+            name="customer-name" 
+            required
+            minlength="2"
+            pattern=".{2,}"
+            />
+         </p>
+
+         <p> 
+            <label for="Customer-email">Email>*:</label>
+            <input 
+            type="email" 
+            id="customer-email" 
+            name="customer-email" 
+            required
+            />
+            <p>
+                <!-- Colour Selection -->
+                 <section>
+                    <h2>T-shirt Colour</h2>
+
+                    <fieldset>
+                        <legend>Please select a colour*</legend>
+                        <ul>
+                            <li
+                        </ul>
+                    
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="colour" 
+                            value="red" 
+                            required
+                            />
+                            Red
+                        </label>
+                    </li> 
+                    <li> 
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="colour" 
+                            value="blue" 
+                            required
+                            />
+                            Blue
+                        </label>
+                    </li>
+
+                    <li> 
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="colour" 
+                            value="green" 
+                            required
+                            />
+                            Green
+                        </label>
+                    </li>
+                    </ul>
+                    </fieldset>
+                </section>
+
+                <!--Size selection-->
+                <section>
+                    <h2>T-shirt Size</h2>
+
+                    <fieldset>
+                        <legend>Please select a size*</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input 
+                                    type="radio" 
+                                    name="size" 
+                                    value="xs" 
+                                    required
+                                    />
+                                    XS
+                                </label>
+                            </li> 
+                            <li> 
+                                <label>
+                                    <input 
+                                    type="radio" 
+                                    name="size" 
+                                    value="s" 
+                                    required
+                                    />
+                                    S
+                                </label>
+                            </li>
+
+                            <li> 
+                                <label>
+                                    <input 
+                                    type="radio" 
+                                    name="size" 
+                                    value="m" 
+                                    required
+                                    />
+                                    M
+                                </label>
+                            </li>
+                            <li> 
+                                <label>
+                                    <input 
+                                    type="radio" 
+                                    name="size" 
+                                    value="l" 
+                                    required
+                                    />
+                                    L
+                                </label>
+                            </li>
+                            <li> 
+                                <label>
+                                    <input 
+                                    type="radio" 
+                                    name="size" 
+                                    value="xl" 
+                                    required
+                                    />
+                                    XL
+                                </label>    
+                            </li>
+                            <label>
+                                <input 
+                                type="radio" 
+                                name="size" 
+                                value="xxl" 
+                                required
+                                />
+                                XXL
+                        </ul>
+                    </fieldset>
+                </section>
+
+                <!--Submit-->
+
+                <section>
+                    <p
+                    <button type="submit">Submit Order</button>
+                    </p>
+                </section>
+            </form>
+            </body>
+            </html>
+                    
