@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Questions</title>
+  <link rel="stylesheet" href="wireframeDinia1css.css">
+</head>
+
+<body>
+  <header>
+    <h1>Asked Questions</h1>
+    <p>Answers to Git .</p>
+  </header>
+
+  <main>
+
+    
+    <section>
+      <article>
+        <h2>What is the purpose of a README file?</h2>
+        <p>
+          A README file introduces and explains a project. How to install or run it, the technologies used, and any
+          relevant instructions for contributors or users. It serves as the first point
+          of reference for understanding the repository.
+        </p>
+        <button>Read More</button>
+      </article>
+    </section>
+
+    
+    <section>
+      <article>
+        <h2>What is the purpose of a wireframe?</h2>
+        <p>
+          A wireframe is a visual guide that outlines the structure of a webpage or
+          application interface. It focuses on layout, content placement, and user flow
+          without dealing with styling or design details. 
+        </p>
+        <button>Read More</button>
+      </article>
+
+      <article>
+        <h2>What is a branch in Git?</h2>
+        <p>
+          A branch in Git is a parallel version of a project code. It allows developers
+          to work on new features, fixes, or experiments without altering the main codebase.
+          Once the work is ready, the branch can be merged back into the main branch.
+        </p>
+        <button>Read More</button>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Footer usually contains contact links and more general site information.</p>
+  </footer>
+
+</body>
+</html>
