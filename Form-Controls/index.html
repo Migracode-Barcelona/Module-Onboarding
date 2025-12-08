@@ -3,25 +3,81 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta name="author" content="Lola Jerez">
+    <title>T-Shirt Form Exercise</title>
+    <meta name="description" content="Form Control Excercise" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirt Order Form</h1>
     </header>
     <main>
       <form>
         <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- - [x] My form is semantic html.
+        - [x] All inputs have associated labels.
+        - [x] My Lighthouse Accessibility score is 100.
+        - [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
+        - [x] I require a valid email.
+        - [x] I require one colour from a defined set of 3 colours.
+        - [x] I require one size from a defined set of 6 sizes.
+     -->
+        <fieldset>
+          <legend>Customer Info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required minlength="2">
+          <p>Must be at least 2 characters long</p>
+        </fieldset>
+
+        <fieldset>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+          <p>Must be a valid email address</p>
+        </fieldset>
+
+        <fieldset>
+        <legend>Select T-shirt Color:</legend>
+        <input type="radio" id="color-white" name="color" value="white" required>
+        <label for="color-white">White</label>
+        
+        <input type="radio" id="color-grey" name="color" value="grey" required>
+        <label for="color-grey">Grey</label>
+
+        <input type="radio" id="color-black" name="color" value="black" required>
+        <label for="color-black">Black</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Select a Size:</legend>
+
+        <input type="radio" id="size-xs" name="size" value="xs" required>
+        <label for="size-xs">XS</label>
+
+        <input type="radio" id="size-small" name="size" value="small" required>
+        <label for="size-small">S</label>
+        
+        <input type="radio" id="size-medium" name="size" value="medium" required>
+        <label for="size-medium">M</label>
+
+        <input type="radio" id="size-large" name="size" value="large" required>
+        <label for="size-large">L</label>
+
+        <input type="radio" id="size-xl" name="size" value="xl" required>
+        <label for="size-xl">XL</label>
+
+        <input type="radio" id="size-xxl" name="size" value="xxl" required>
+        <label for="size-xxl">XXL</label>
+        </fieldset>
+        <br>
+        <button type="submit">Confirm Order</button>
+
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Lola Jerez
+      </h2>
     </footer>
   </body>
 </html>
