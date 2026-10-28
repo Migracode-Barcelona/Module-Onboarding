@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
+    <title>My T-shirt Store</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -13,10 +13,38 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p>  <div>
+          <!-- Customer name--> 
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" minlength="2" maxlength="100" required />
+        </div></p>
+        <!-- Customer email--> 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <p>size selections</p>
+        <!-- size selections (6 options :xs, s, m, l, xl, xxl)--> 
+        <label for="size">Size</label>
+        <select id="size" name="size">
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+          <option value="xxl">Double Extra Large</option>
+        </select>
+        <p> colour selections</p>
+        <!-- colour selections (6 options :red, blue, green, yellow, black, white-->
+        <label for="colour">Colour</label>
+        <select id="colour" name="colour">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+        <P> submit order </P>
+        <button type="submit">Submit order</button>
       </form>
     </main>
     <footer>

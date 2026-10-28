@@ -50,9 +50,14 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+left: 0;
+right: 0;
+background-color: black;
+color: white;
+text-align: center;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -74,16 +79,33 @@ Setting the rules for how elements are placed in the article.
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+
+
+.art1 {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
-  display: grid;
+
   grid-template-columns: var(--space) 1fr var(--space);
-  > * {
+  
+  
+  * {
     grid-column: 2/3;
   }
+
   > img {
     grid-column: span 3;
-  }
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius:  8px; }
 }
+> @@ -74,16 +79,25 @@ Setting the rules for how elements are placed in the article.
+ Now laying out just the INSIDE of the repeated card/article design.
+ Keeping things orderly and separate is the key to good, simple CSS.
+ */
+-article {
++
++
++.art1 {
