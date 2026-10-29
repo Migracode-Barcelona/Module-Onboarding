@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,16 +12,46 @@
       <h1>Product Pick</h1>
     </header>
     <main>
+      <!-- This form contains Customer details such as name, email, colour preference and shirt size -->
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <p>
+          <label for="name">Customer's Name:</label>
+          <input type="text" id="name" required />
+        </p>
+
+        <p>
+          <label for="email">Customer's Email:</label>
+          <input type="email" id="email" required />
+        </p>
+
+        <p>
+          <label for="colour">T-Shirt Colour</label>
+          <select id="colour" required>
+            <option value="">Select a colour</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="size">T-Shirt Size</label>
+          <select id="size" required>
+            <option value="">Select a size</option>
+            <option value="extra-small">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extra-large">XL</option>
+            <option value="extra-extra-large">XXL</option>
+          </select>
+        </p>
+        <p><button type="submit">Submit</button></p>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Danjumah Mohammed Lawal</h2>
     </footer>
   </body>
 </html>
