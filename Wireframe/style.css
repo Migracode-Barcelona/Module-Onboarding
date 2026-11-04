@@ -20,9 +20,10 @@ As well as useful links to learn more */
   --paper: oklch(7 0 0);
   --ink: color-mix(in oklab, var(--color) 5%, black);
   --font: 100%/1.5 system-ui;
-  --space: clamp(6px, 6px + 2vw, 15px);
-  --line: 1px solid;
+  --space: 8px;
+  --line: 6px solid;
   --container: 1280px;
+  --buttonline: 2px solid;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -33,7 +34,7 @@ body {
 }
 a {
   padding: var(--space);
-  border: var(--line);
+  border: var(--buttonline);
   max-width: fit-content;
 }
 img,
@@ -47,7 +48,7 @@ https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
 main {
   max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
+  margin: 30px auto calc(var(--space) * 4) auto;
 }
 footer {
   position: fixed;
@@ -64,7 +65,7 @@ https://gridbyexample.com/learn/
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space);
+  gap: calc(var(--space) * 4);
   > *:first-child {
     grid-column: span 2;
   }
@@ -79,7 +80,7 @@ article {
   padding-bottom: var(--space);
   text-align: left;
   display: grid;
-  grid-template-columns: var(--space) 1fr var(--space);
+  grid-template-columns: calc(var(--space) * 4) 1fr var(--space);
   > * {
     grid-column: 2/3;
   }
