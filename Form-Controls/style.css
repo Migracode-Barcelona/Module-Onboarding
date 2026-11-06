@@ -1,0 +1,15 @@
+:root {
+  --paper: oklch(7 100 0);
+  --ink: color-mix(in oklab, var(--color) 5%, black);
+  --font: 100%/1.5 system-ui;
+  --space: 8px;
+  --line: 6px solid;
+  --container: 1280px;
+  --buttonline: 2px solid;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: var(--font);
+  padding: var(--space);
+}
